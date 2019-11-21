@@ -1,0 +1,61 @@
+<div class="container-fluid" style="margin-top: -70px">
+<div class="row">
+ <div class="col-10 p-3 mb-2 bg-primary text-white">
+     <img src="assets/flip.png" width="140px" height="40px"/>
+ </div>
+ <div class="col-2 p-3 mb-2 bg-primary text-white">
+
+  <div class="search-container">
+    <form>
+      <input type="text" placeholder="Search..." name="search">
+    </form>
+  </div>
+ </div>
+</div>
+<div class="row">
+  <div class="col-2 shadow-sm p-3 mb-5 bg-white rounded">
+      
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" routerLink="/men">
+                  <span data-feather="home"></span>
+                  Men <span class="sr-only"></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/female">
+                  <span data-feather="file"></span>
+                  Female
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/mobile">
+                  <span data-feather="shopping-cart"></span>
+                  Mobiles
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/laptop">
+                  <span data-feather="shopping-cart"></span>
+                  Laptops
+                </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" routerLink="/toy">
+                    <span data-feather="shopping-cart"></span>
+                    Toys
+                  </a>
+                </li>
+            </ul>
+            
+          </div>          
+      
+  </div>&nbsp;
+
+  <div class="col-9 shadow-sm p-3 mb-5 bg-white rounded">
+       <router-outlet></router-outlet>
+    </div>
+</div>
+
+</div>

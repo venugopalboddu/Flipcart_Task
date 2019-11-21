@@ -1,0 +1,48 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Iphone",
+      "price": 50000,
+      "img": "assets/ip.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Redmi",
+      "price": 15000,
+      "img": "assets/red.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Oppo",
+      "price": 20000,
+      "img": "assets/op.jpg"
+    }
+  ],
+  "laptops": [
+    {
+      "id": 1,
+      "name": "Toshiba Notebook1",
+      "price": 25500,
+      "img": "https://res.cloudinary.com/dxfq3iotg/image/upload/v1562074043/234.png"
+    },
+    {
+      "id": 2,
+      "name": "Toshiba Notebook2",
+      "price": 38500,
+      "img": "https://res.cloudinary.com/dxfq3iotg/image/upload/v1562074217/124896_preview.png"
+    },
+    {
+      "id": 3,
+      "name": "Toshiba Notebook3",
+      "price": 60000,
+      "img": "https://res.cloudinary.com/dxfq3iotg/image/upload/v1562074043/234.png"
+    },
+    {
+      "id": 4,
+      "name": "Toshiba Notebook4",
+      "price": 95500,
+      "img": "https://res.cloudinary.com/dxfq3iotg/image/upload/v1562074043/234.png"
+    }
+  ]
+}
