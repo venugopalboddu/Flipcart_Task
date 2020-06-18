@@ -1,5 +1,6 @@
 import { LapService } from '../lap.service';
 import { Component, OnInit } from '@angular/core';
+import { ToyService } from '../toy.service';
 
 @Component({
   selector: 'app-laptop',
@@ -9,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class LaptopComponent implements OnInit {
   ldata: any;
 
-  constructor(private s: LapService) { }
+  constructor(private s: ToyService) { }
 
   ngOnInit() {
     this.getL();

@@ -19,8 +19,8 @@ const routes: Routes = [
   { path: 'female', component: FemaleComponent},
   { path: 'mobile', component: MobileComponent},
   { path: 'laptop', component: LaptopComponent},
-  { path: 'details/:name/:price/:img', component: DetailsComponent},
-  { path: 'ldetails/:name/:price/:img', component: LdetailsComponent},
+  { path: 'details/:id', component: DetailsComponent},
+  { path: 'ldetails/:name', component: LdetailsComponent},
   { path: 'toy', component: ToysComponent,
     children: [
       { path: 'stoy', component: StoyComponent},

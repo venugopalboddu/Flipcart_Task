@@ -13,5 +13,11 @@ export class ToyService {
     return this.http.get("http://localhost:3000/products");
   }
 
+  getMobile(i){
+    return this.http.get(`http://localhost:3000/products/${i}`);
+  }
+  getLap(){
+    return this.http.get("http://localhost:3000/laptops");
+  }
 
 }

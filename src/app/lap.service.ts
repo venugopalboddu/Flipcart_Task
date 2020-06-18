@@ -8,7 +8,7 @@ export class LapService {
 
   constructor(private ht: HttpClient) { }
 
-  getLap(){
-    return this.ht.get("http://localhost:3000/laptops");
+  getLap(i){
+    return this.ht.get(`http://localhost:3000/laptops/${i}`);
   }
 }

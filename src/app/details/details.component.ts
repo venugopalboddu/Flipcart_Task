@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { ToyService } from '../toy.service';
 
 @Component({
   selector: 'app-details',
@@ -9,15 +10,16 @@ import { ActivatedRoute } from '@angular/router';
 export class DetailsComponent implements OnInit {
   data: any;
 
-  constructor(private ar: ActivatedRoute) { }
+  constructor(private ar: ActivatedRoute, private s: ToyService) { }
 
   ngOnInit() {
-    console.log(this.ar.snapshot.params.id, this.ar.snapshot.params.name, this.ar.snapshot.params.img);
-    this.ar.params.subscribe((res) => {
-      this.data = res;
-    });
-    console.log(this.data.id, this.data.name);
+    console.log(this.ar.snapshot.params.id);
+    var m = this.ar.snapshot.params.id;
 
+    this.s.getMobile(m).subscribe((res)=>{
+      this.data = res;
+      console.log("Mobiles", this.data);
+    });
 
   }
 

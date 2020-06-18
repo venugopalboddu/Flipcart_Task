@@ -1,5 +1,8 @@
 import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
+import { ToyService } from '../toy.service';
+import { LapService } from '../lap.service';
+
 
 @Component({
   selector: 'app-ldetails',
@@ -8,14 +11,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LdetailsComponent implements OnInit {
    ldata:any;
-  constructor(private ar: ActivatedRoute) { }
+  constructor(private ar: ActivatedRoute, private s: LapService ) { }
 
   ngOnInit() {
-    console.log(this.ar.snapshot.params.name, this.ar.snapshot.params.price, this.ar.snapshot.params.img);
-
-    this.ar.params.subscribe((res)=>{
+    console.log(this.ar.snapshot.params.name);
+    var lap = this.ar.snapshot.params.name;
+    this.s.getLap(lap).subscribe((res)=>{
       this.ldata = res;
-      console.log('Lap', this.ldata);
-    })
+      console.log("Laptops", this.ldata);
+    });
+    
   }
 }
