@@ -120,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "flipcart"
+    }
+  },
+  "defaultProject": "flipcart",
+  "cli": {
+    "analytics": "8165dda1-ce2e-4b66-9c1f-85b55c1e9636"
+  }
 }
